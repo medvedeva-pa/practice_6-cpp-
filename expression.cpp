@@ -3,7 +3,7 @@
 using namespace std;
 class expression
 {
-public:         // TASK 2
+public:         
     double  a=0;
     double b=0;
     char operation='+';
