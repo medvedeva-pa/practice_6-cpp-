@@ -1,20 +1,23 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 class expression
+    
 {
 public:         
-    double  a=0;
-    double b=0;
-    char operation='+';
+    double  a = 0;
+    double b = 0;
+    char operation = '+';
 };
+
 expression convert(string s)
 {
     expression y;
-    int j=0;
-    int error=0;
-    const int siz=s.size();
-    int r=siz-1;
+    int j = 0;
+    int error = 0;
+    const int siz = s.size();
+    int r = siz - 1;
     char S[r];
     for (int i = 0; i < siz; i++) {
         if (s[i] == ':' or s[i] == '+' or s[i] == '-' or s[i] == '*')
@@ -24,7 +27,7 @@ expression convert(string s)
             j++;
             continue;
         };
-        if (isdigit(s[i]) or s[i]==' ')
+        if (isdigit(s[i]) or s[i] ==' ')
         {
             S[j] = s[i];
             j++;
